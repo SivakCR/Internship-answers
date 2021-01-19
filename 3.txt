@@ -4,5 +4,5 @@ var m = a.slice(3,5)
 var d = a.slice(0,2)
 var oldD = new Date(y, m, d);
 var newD = new Date() 
-res = parseInt((newD.getTime() - oldD.getTime()) / (1000 * 3600 * 24))
+var res = parseInt((newD.getTime() - oldD.getTime()) / (1000 * 3600 * 24))
 print(res)
