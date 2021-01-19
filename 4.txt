@@ -4,7 +4,7 @@ function isAlphaOrParen(str) {
 var str = 'Hi awesome!'
 var res = ""
 var temp = ""
-for( i in str ){
+for( var i in str ){
     if(i!=0 && isAlphaOrParen(str[i]) && str[i-1]!==" " ){
         temp = '#' +  (str.charCodeAt(i)-96).toString()
         res = res + temp 

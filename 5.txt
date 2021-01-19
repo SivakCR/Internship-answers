@@ -1,6 +1,6 @@
-t = ["test", "name", 45, "anything", true, 78]
-v= { "string": [ ], "number": [ ], "boolean": [ ] }
-for ( i in t ){ 
+var t = ["test", "name", 45, "anything", true, 78]
+var v= { "string": [ ], "number": [ ], "boolean": [ ] }
+for ( var i in t ){ 
 	console.log( typeof( t[i] )) 
 	v[  typeof(t[i])   ].push(t[i])
 }
