@@ -1,0 +1,8 @@
+a = '24-01-1995'
+y = a.slice(6,20)
+m = a.slice(3,5)
+d = a.slice(0,2)
+oldD = new Date(y, m, d);
+newD = new Date() 
+res = parseInt((newD.getTime() - oldD.getTime()) / (1000 * 3600 * 24))
+print(res)
